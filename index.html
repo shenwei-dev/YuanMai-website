@@ -15,13 +15,13 @@
         }
         .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
         header {
-            padding: 20px 0;
+            padding: 24px 0 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* 水平居中 */
             align-items: center;
             border-bottom: 1px solid #E5E5E5;
         }
-        .logo { font-size: 18px; font-weight: 800; color: #111111; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo { font-size: 20px; font-weight: 800; color: #111111; text-decoration: none; display: flex; align-items: center; gap: 8px; }
         .logo-badge { font-size: 11px; font-weight: 600; background: #E6F7ED; color: #07C160; padding: 2px 8px; border-radius: 10px; }
         .btn-download {
             display: inline-flex;
@@ -84,66 +84,49 @@
             <a href="#" class="logo">
                 源脉 <span class="logo-badge">YUANMAI</span>
             </a>
-            <a href="#download" class="btn-download" style="padding: 8px 16px; font-size: 13px;">下载 App</a>
         </header>
         <section class="hero">
-            <h1>源脉 · 纯粹安心的即时聊天软件</h1>
-            <p>一款回归沟通本质的即时通讯 App。没有繁琐束缚，无无故封号，集成即时单聊、超清音视频与 AI 助手。</p>
-            <div id="download" style="margin-top: 12px;">
+            <h1>源脉 · 轻量极速的即时聊天软件</h1>
+            <p>一款聚焦于家庭聊天的软件，让聊天更安心。</p>
+            <div style="margin-top: 12px;">
                 <a href="https://github.com/你的用户名/你的仓库/releases/download/v1.0.0/app-release.apk" class="btn-download">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.06 15.3414 16.683 15.7184 16.683 16.1814C16.683 16.6444 17.06 17.0214 17.523 17.0214C17.986 17.0214 18.363 16.6444 18.363 16.1814C18.363 15.7184 17.986 15.3414 17.523 15.3414ZM6.477 15.3414C6.014 15.3414 5.637 15.7184 5.637 16.1814C5.637 16.6444 6.014 17.0214 6.477 17.0214C6.94 17.0214 7.317 16.6444 7.317 16.1814C7.317 15.7184 6.94 15.3414 6.477 15.3414ZM12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM18.5 13H5.5C4.672 13 4 12.328 4 11.5C4 10.672 4.672 10 5.5 10H18.5C19.328 10 20 10.672 20 11.5C20 12.328 19.328 13 18.5 13Z"/></svg>
-                    下载 Android 安装包 (APK)
+                    安卓版 下载
                 </a>
             </div>
         </section>
-
-        <!-- 模块化功能网格 -->
         <section class="grid">
-            
-            <!-- 亮点 1：对比微信优势 (无风控不封号) -->
             <div class="card card-highlight">
                 <h3 style="color: #0F5132;">🛡️ 无风控 · 绝不封号</h3>
-                <p style="color: #2D6A4F;">没有复杂的敏感词拦截与误封机制，不随意冻结账号，让你的熟人社交与沟通更安心、更自由。</p>
+                <p style="color: #2D6A4F;">不误封账号，让聊天更安心。</p>
             </div>
-
-            <!-- 亮点 2：对比微信优势 (极致轻量化) -->
             <div class="card card-highlight">
                 <h3 style="color: #0F5132;">⚡ 极轻量 · 秒开不卡顿</h3>
-                <p style="color: #2D6A4F;">拒绝臃肿体积，后台内存占用仅数十兆。老旧手机依然秒开秒发，告别微信“存储空间不足”的烦恼。</p>
+                <p style="color: #2D6A4F;">体积小，响应快，增强您的体验。</p>
             </div>
-
-            <!-- 亮点 3：毫秒级单聊 -->
             <div class="card">
                 <h3>💬 毫秒级即时单聊</h3>
-                <p>基于 WebSocket 长连接与 Protobuf 协议，支持消息送达确认与离线消息同步，确保消息必达。</p>
+                <p>数据基于二进制协议传输，节省流量。</p>
             </div>
-
-            <!-- 亮点 4：超清音视频 -->
             <div class="card">
                 <h3>📞 超清音视频通话</h3>
-                <p>Real-Time Communication 实时传输，自适应抗弱网算法，即使在网络不佳时依然保证音视频流畅清晰。</p>
+                <p>音视频模块采用自研算法进行优化，在弱网环境下仍能保持流畅通话</p>
             </div>
-
-            <!-- 亮点 5：原生 AI Agent -->
             <div class="card">
                 <h3>🤖 原生 AI Agent 智能体</h3>
-                <p>对话框直接接入 AI 助手，支持上下文对话理解与长文本总结，随时随地帮你处理事务、解答疑问。</p>
+                <p>接入AI助手，既能帮您解决生活中的疑问，也能帮助您更好的处理消息。</p>
             </div>
-
-            <!-- 亮点 6：纯净社交生态 -->
             <div class="card">
                 <h3>👥 纯净好友生态</h3>
-                <p>零广告打扰，清晰的双向好友关系链，支持好友在线状态实时感知与个性名片拓展。</p>
+                <p>无繁琐的个性化配置，让心思聚焦于聊天。</p>
             </div>
-
         </section>
         <footer>
-            <div>© 2026 源脉. 保留所有权利。</div>
+            <div>© 2026 源脉 YUANMAI. 保留所有权利。</div>
             <div>
                 <a href="https://beian.miit.gov.cn/" target="_blank"></a>
             </div>
         </footer>
     </div>
-
 </body>
 </html>
