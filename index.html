@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>源脉</title>
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
             background-color: #FAFAFA;
@@ -13,16 +17,24 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
         }
-        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
         header {
             padding: 24px 0 20px;
             display: flex;
-            justify-content: center; /* 水平居中 */
+            justify-content: center;
             align-items: center;
             border-bottom: 1px solid #E5E5E5;
         }
-        .logo { font-size: 20px; font-weight: 800; color: #111111; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-        .logo-badge { font-size: 11px; font-weight: 600; background: #E6F7ED; color: #07C160; padding: 2px 8px; border-radius: 10px; }
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: #111111;
+            text-decoration: none;
+        }
         .btn-download {
             display: inline-flex;
             align-items: center;
@@ -35,12 +47,23 @@
             font-weight: 600;
             border-radius: 8px;
             text-decoration: none;
-            transition: background 0.2s ease;
         }
-        .btn-download:hover { background-color: #06AD56; }
-        .hero { padding: 48px 0 24px; text-align: center; }
-        .hero h1 { font-size: 32px; font-weight: 800; color: #111111; margin-bottom: 12px; letter-spacing: -0.5px; }
-        .hero p { font-size: 15px; color: #666666; max-width: 480px; margin: 0 auto 24px; line-height: 1.6; }
+        .hero {
+            padding: 48px 0 24px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111111;
+            margin-bottom: 12px;
+        }
+        .hero p {
+            font-size: 15px;
+            color: #666666;
+            max-width: 480px;
+            margin: 0 auto 24px;
+        }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -53,80 +76,84 @@
             border-radius: 10px;
             padding: 20px;
         }
-        .card-highlight {
-            background-color: #F4FBF7;
-            border: 1px solid #C2EAD5;
+        .card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 6px;
         }
-        .card h3 { font-size: 15px; font-weight: 700; color: #111111; margin-bottom: 6px; }
-        .card p { font-size: 13px; color: #666666; line-height: 1.5; }
+        .card p {
+            font-size: 13px;
+            color: #666666;
+        }
         footer {
             padding: 30px 0;
             border-top: 1px solid #E5E5E5;
             font-size: 12px;
             color: #999999;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
+            text-align: center;
         }
-        footer a { color: #666666; text-decoration: none; }
-        footer a:hover { text-decoration: underline; }
         @media (max-width: 640px) {
-            .hero h1 { font-size: 26px; }
-            .hero p { font-size: 14px; }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .hero p {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="#" class="logo">
-                源脉 <span class="logo-badge">YUANMAI</span>
+<div class="container">
+    <header>
+        <a href="#" class="logo">
+            源脉
+        </a>
+    </header>
+    <section class="hero">
+        <h1>源脉 · 轻量极速的即时聊天软件</h1>
+        <p>
+            一款聚焦于家庭聊天的软件，让聊天更安心。
+        </p>
+        <div style="margin-top:12px;">
+            <a href="https://github.com/shenwei-dev/NexusPool/releases/download/v1.0.0/app-release.apk"
+               class="btn-download">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.523 15.3414C17.06 15.3414 16.683 15.7184 16.683 16.1814C16.683 16.6444 17.06 17.0214 17.523 17.0214C17.986 17.0214 18.363 16.6444 18.363 16.1814C18.363 15.7184 17.986 15.3414 17.523 15.3414ZM6.477 15.3414C6.014 15.3414 5.637 15.7184 5.637 16.1814C5.637 16.6444 6.014 17.0214 6.477 17.0214C6.94 17.0214 7.317 16.6444 7.317 16.1814C7.317 15.7184 6.94 15.3414 6.477 15.3414ZM12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM18.5 13H5.5C4.672 13 4 12.328 4 11.5C4 10.672 4.672 10 5.5 10H18.5C19.328 10 20 10.672 20 11.5C20 12.328 19.328 13 18.5 13Z"/>
+                </svg>
+                安卓版 下载
             </a>
-        </header>
-        <section class="hero">
-            <h1>源脉 · 轻量极速的即时聊天软件</h1>
-            <p>一款聚焦于家庭聊天的软件，让聊天更安心。</p>
-            <div style="margin-top: 12px;">
-                <a href="https://github.com/你的用户名/你的仓库/releases/download/v1.0.0/app-release.apk" class="btn-download">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414C17.06 15.3414 16.683 15.7184 16.683 16.1814C16.683 16.6444 17.06 17.0214 17.523 17.0214C17.986 17.0214 18.363 16.6444 18.363 16.1814C18.363 15.7184 17.986 15.3414 17.523 15.3414ZM6.477 15.3414C6.014 15.3414 5.637 15.7184 5.637 16.1814C5.637 16.6444 6.014 17.0214 6.477 17.0214C6.94 17.0214 7.317 16.6444 7.317 16.1814C7.317 15.7184 6.94 15.3414 6.477 15.3414ZM12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2ZM18.5 13H5.5C4.672 13 4 12.328 4 11.5C4 10.672 4.672 10 5.5 10H18.5C19.328 10 20 10.672 20 11.5C20 12.328 19.328 13 18.5 13Z"/></svg>
-                    安卓版 下载
-                </a>
-            </div>
-        </section>
-        <section class="grid">
-            <div class="card card-highlight">
-                <h3 style="color: #0F5132;">🛡️ 无风控 · 绝不封号</h3>
-                <p style="color: #2D6A4F;">不误封账号，让聊天更安心。</p>
-            </div>
-            <div class="card card-highlight">
-                <h3 style="color: #0F5132;">⚡ 极轻量 · 秒开不卡顿</h3>
-                <p style="color: #2D6A4F;">体积小，响应快，增强您的体验。</p>
-            </div>
-            <div class="card">
-                <h3>💬 毫秒级即时单聊</h3>
-                <p>数据基于二进制协议传输，节省流量。</p>
-            </div>
-            <div class="card">
-                <h3>📞 超清音视频通话</h3>
-                <p>音视频模块采用自研算法进行优化，在弱网环境下仍能保持流畅通话</p>
-            </div>
-            <div class="card">
-                <h3>🤖 原生 AI Agent 智能体</h3>
-                <p>接入AI助手，既能帮您解决生活中的疑问，也能帮助您更好的处理消息。</p>
-            </div>
-            <div class="card">
-                <h3>👥 纯净好友生态</h3>
-                <p>无繁琐的个性化配置，让心思聚焦于聊天。</p>
-            </div>
-        </section>
-        <footer>
-            <div>© 2026 源脉 YUANMAI. 保留所有权利。</div>
-            <div>
-                <a href="https://beian.miit.gov.cn/" target="_blank"></a>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="card">
+            <h3>🛡️ 无风控 · 绝不封号</h3>
+            <p>不误封账号，让聊天更安心。</p>
+        </div>
+        <div class="card">
+            <h3>⚡ 极轻量 · 秒开不卡顿</h3>
+            <p>体积小，响应快，增强您的体验。</p>
+        </div>
+        <div class="card">
+            <h3>💬 毫秒级即时单聊</h3>
+            <p>数据基于二进制协议传输，节省流量。</p>
+        </div>
+        <div class="card">
+            <h3>📞 超清音视频通话</h3>
+            <p>音视频模块采用自研算法进行优化，在弱网环境下仍能保持流畅通话。</p>
+        </div>
+        <div class="card">
+            <h3>🤖 AI Agent 智能体</h3>
+            <p>接入AI助手，帮助解决生活问题，也能辅助处理消息。</p>
+        </div>
+        <div class="card">
+            <h3>👥 纯净好友生态</h3>
+            <p>无繁琐配置，让心思聚焦于聊天。</p>
+        </div>
+    </section>
+    <footer>
+        © 2026 源脉. 保留所有权利。
+    </footer>
+</div>
 </body>
 </html>
